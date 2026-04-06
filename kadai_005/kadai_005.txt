@@ -1,0 +1,53 @@
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge
+$ git init
+Initialized empty Git repository in C:/Users/ななみ/Desktop/お勉強関係/Git関連/git_challenge/.git/
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$ touch hello_world.txt
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$ echo Hello, World! >> hello_world.txt 
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$ git add .
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$ git commit
+[main (root-commit) ee4af62] 文言を追加しました。
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$ echo "こんにちは、世界！" >> hello_world.txt 
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$ git log
+commit ee4af62dcef6bd2088dfcc29221818ce11844ddc (HEAD -> main)
+Author: benizmrn-dotcom <benizm0827@gmail.com>
+Date:   Mon Apr 6 13:16:21 2026 +0900
+
+    文言を追加しました。
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$ git add .
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$ git commit
+[main 7f85966] 文言を追加しました。
+ 1 file changed, 1 insertion(+)
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$ git log one_line
+fatal: ambiguous argument 'one_line': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+ななみ@LAPTOP-CG4RQ141 MINGW64 ~/Desktop/お勉強関係/Git関連/git_challenge (main)       
+$ git log --oneline
+7f85966 (HEAD -> main) 文言を追加しました。
+ee4af62 文言を追加しました。
